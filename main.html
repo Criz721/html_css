@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lugtu Builders</title>
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Google Fonts Links For Icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="" target="_blank" class="logo" alt="Coffee Logo" /><h5>LUGTU BUILDERS.</h5></a>
+        <ul class="menu-links">
+          <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+          <li><a href="home.html" target="_blank">Home</a></li>
+          <li><a href="servicesoffered.html" target="_blank">Services Offered</a></li>
+          <li><a href="testimonial.html" target="_blank">Testimonials</a></li>
+          <li><a href="aboutus.html" target="_blank">About us</a></li>
+          <li><a href="contactus.html" target="_blank">Contact us</a></li>
+        </ul>
+        <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+      </nav>
+    </header>
+
+    <section class="hero-section">
+      <div class="content">
+        <h2>Start Your Dream Project With Us.</h2>
+        <p>
+          "We don’t just build structures — we bring your dreams to life."
+At LUGTU BUILDERS, we specialize in turning ideas into enduring landmarks. Whether it's the comfort of a dream home, the elegance of a modern condominium, or the grandeur of a hotel, our team delivers with quality, integrity, and precision.
+
+With every project, we commit to building not just for today — but for generations to come. Let’s create something extraordinary, together.
+        </p>
+        <a href="contactus.html" target="_blank"><button>Inquire Us</button></a>
+        <p>All rights reserved Lugtu Builders 2026 &copy;</p>
+        <div>
+            
+        </div>
+      </div>
+      
+    </section>
+
+    
+    <script>
+      const header = document.querySelector("header");
+      const hamburgerBtn = document.querySelector("#hamburger-btn");
+      const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+      // Toggle mobile menu on hamburger button click
+      hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+      // Close mobile menu on close button click
+      closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+    </script>
+    
+  </body>
+</html>

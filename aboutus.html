@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="css/aboutus.css">
+    <!-- Google Fonts Links For Icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+  </head>
+  <body>
+    <header>
+      
+      <nav class="navbar">
+        <!-- <a href="" target="_blank" class="logo" alt="Coffee Logo" /><h5>[ LUGTU BUILDERS ]</h5></a> -->
+        <ul class="menu-links">
+          <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+          <li><a href="home.html" target="_blank">Home</a></li>
+          <li><a href="servicesoffered.html" target="_blank">Services Offered</a></li>
+          <li><a href="testimonial.html" target="_blank">Testimonials</a></li>
+          <li><a href="aboutus.html" target="_blank">About us</a></li>
+          <li><a href="contactus.html" target="_blank">Contact us</a></li>
+        </ul>
+        <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+      </nav>
+    </header>
+
+    <section class="hero-section">
+      <div class="content">
+        <h2>About Us.</h2>
+        <p>At Lugtu Builders, we believe that every structure we build is more than just concrete and steel — it's the foundation of someone's dream.</p>
+
+<p>Our team of dedicated architects, engineers, and builders work closely with every client to bring their vision to life — whether it's a cozy family home, a sleek modern condo, or a luxurious hotel. We take pride in delivering projects on time, within budget, and beyond expectations.
+
+Let us help you build your future — one brick, one beam, one dream at a time.</p>
+
+
+          
+      
+       <a href="contactus.html" target="_blank"><button>Inquire Us</button></a>
+       <div>
+            <p>All rights reserved Lugtu Builders 2026 &copy;</p>
+        </div>
+      </div>
+      
+    </section>
+
+   
+
+    <script>
+      const header = document.querySelector("header");
+      const hamburgerBtn = document.querySelector("#hamburger-btn");
+      const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+      // Toggle mobile menu on hamburger button click
+      hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+      // Close mobile menu on close button click
+      closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+    </script>
+    
+  </body>
+</html>
